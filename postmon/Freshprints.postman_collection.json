@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "f742f5e7-b56a-4042-a4aa-e83f315787ff",
+		"name": "Freshprints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15191649"
+	},
+	"item": [
+		{
+			"name": "Adduser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Budesh4\",\n    \"email\":\"bpatil775@gmal.com\",\n    \"role\":\"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/user/adduser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"user",
+						"adduser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getusers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6060/user/getusers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"user",
+						"getusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getsinguser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6060/user/getsinguser/5140064",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"user",
+						"getsinguser",
+						"5140064"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleteuser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6060/user/deleteuser/4037123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"user",
+						"deleteuser",
+						"4037123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updateuser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Budeshbp\",\n    \"email\":\"bpatil775@gmal.com\",\n    \"role\":\"vendor\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/user/updateuser/4037123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"user",
+						"updateuser",
+						"4037123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewApparel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"products1\",\n    \"price\": 100,\n    \"size\":[10,20,30,40],\n    \"user_id\":\"9499268\",\n    \"stock_quality\":10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/apparel/addapparel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"apparel",
+						"addapparel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllApparels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6060/apparel/getapparels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"apparel",
+						"getapparels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getsingapparel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6060/apparel/getsingapparel/0405739",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"apparel",
+						"getsingapparel",
+						"0405739"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updateapparel",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"products4\",\n    \"price\": 200,\n    \"size\":[10,20],\n    \"user_id\":\"9499268\",\n    \"stock_quality\":10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/apparel/updateapparel/3855856",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"apparel",
+						"updateapparel",
+						"3855856"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updateapparelsymultiniously",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"products4\",\n    \"price\": 200,\n    \"size\":[10,20],\n    \"user_id\":\"9499268\",\n    \"stock_quality\":10,\n    \"apparel_ids\":[3855856,5692535]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/apparel/updateapparelsymultiniously",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"apparel",
+						"updateapparelsymultiniously"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Place order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"apparel_id\":\"3855856\",\n    \"user_id\":9499268,\n    \"order_qty\":1\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/order/addorder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"order",
+						"addorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6060/order/getorders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"order",
+						"getorders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
